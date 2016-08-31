@@ -1,0 +1,116 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+# Date created = 11:23:34  April 12, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		nefs_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Stratix III"
+set_global_assignment -name DEVICE EP3SE260F1152C2
+set_global_assignment -name TOP_LEVEL_ENTITY TDE_ANC
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:23:34  APRIL 12, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH TDE_ANC_vlg_tst -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME PwCal_vlg -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id PwCal_vlg
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "2 us" -section_id PwCal_vlg
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME PwCal_vlg_tst -section_id PwCal_vlg
+set_global_assignment -name EDA_TEST_BENCH_NAME FreCal_vlg -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id FreCal_vlg
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id FreCal_vlg
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME FreCal_vlg_tst -section_id FreCal_vlg
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_NAME IP_FFT_tb_vst -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id IP_FFT_tb_vst
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id IP_FFT_tb_vst
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME IP_FFT_tb -section_id IP_FFT_tb_vst
+set_global_assignment -name EDA_TEST_BENCH_NAME TDEA_vlg_tst -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TDEA_vlg_tst
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1000 us" -section_id TDEA_vlg_tst
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TDEA_vlg_tst -section_id TDEA_vlg_tst
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT simulation/stimulationforANC.do -section_id eda_simulation
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name EDA_MAINTAIN_DESIGN_HIERARCHY ON -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_NAME TDE_ANC_vlg_tst -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TDE_ANC_vlg_tst
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id TDE_ANC_vlg_tst
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TDE_ANC_vlg_tst -section_id TDE_ANC_vlg_tst
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/PwCal.vt -section_id PwCal_vlg
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/FreCal.vt -section_id FreCal_vlg
+set_global_assignment -name EDA_TEST_BENCH_FILE IP_FFT_tb.v -section_id IP_FFT_tb_vst
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/TDEA.vt -section_id TDEA_vlg_tst
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/TDE_ANC.vt -section_id TDE_ANC_vlg_tst
+set_global_assignment -name VERILOG_FILE Smooth.v
+set_global_assignment -name VERILOG_FILE TDE_ANC.v
+set_global_assignment -name SDC_FILE NERS.sdc
+set_global_assignment -name VERILOG_FILE floatcal.v
+set_global_assignment -name QIP_FILE IP_floatmult.qip
+set_global_assignment -name QIP_FILE IP_floatconvert.qip
+set_global_assignment -name VERILOG_FILE TDEA.v
+set_global_assignment -name QIP_FILE IP_floatadd_sub.qip
+set_global_assignment -name QIP_FILE IP_exp.qip
+set_global_assignment -name QIP_FILE IP_int14mult.qip
+set_global_assignment -name QIP_FILE IP_uint36_add_sub.qip
+set_global_assignment -name MIF_FILE sinc_table.mif
+set_global_assignment -name MIF_FILE fv_table.mif
+set_global_assignment -name QIP_FILE IP_int14multint16.qip
+set_global_assignment -name QIP_FILE IP_int32ADD.qip
+set_global_assignment -name QIP_FILE IP_int32mult32.qip
+set_global_assignment -name QIP_FILE IP_int64tofl.qip
+set_global_assignment -name QIP_FILE IP_int32sub.qip
+set_global_assignment -name QIP_FILE IP_PARADD65.qip
+set_global_assignment -name QIP_FILE IP_fltoint32.qip
+set_global_assignment -name QIP_FILE IP_ROMsinc.qip
+set_global_assignment -name QIP_FILE IP_ROMfv.qip
+set_global_assignment -name VERILOG_FILE AFIR.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
